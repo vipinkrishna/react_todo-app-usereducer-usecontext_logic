@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: unset;
+  padding: unset;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.todo-app {
+  margin: 10px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  color: gray;
+  font-size: 14px;
+  text-transform: uppercase;
+  user-select: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 4px;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 30px;
+  padding: 0;
+  user-select: none;
+}
+
+li {
+  display: block;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  background-color: #ddd;
+}
+
+li:hover {
+  background-color: #eee;
+  transition: 0.5s ease;
+}
+
+.todo-item {
+  cursor: pointer;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.checked {
+  background-color: #555;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.checked:hover {
+  background-color: #666;
+}
+
+.checkbox-container input {
+  height: 20px;
+  display: none;
+}
+
+input[type='text'] {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 16px;
+}
+
+button[type='submit'] {
+  font-weight: bold;
+  background-color: #f55;
+  color: #fff;
+}
+
+button[type='submit']:hover {
+  background-color: #f00;
+}
